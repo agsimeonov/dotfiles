@@ -13,3 +13,8 @@ fi
 if [ -d /usr/local/opt/android-sdk ]; then
   export ANDROID_HOME=/usr/local/opt/android-sdk
 fi
+
+# User Binaries
+if [ -d ~/bin ]; then
+  export PATH=~/bin:$PATH
+fi
