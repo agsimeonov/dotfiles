@@ -1,2 +1,5 @@
 .DS_Store
+.zsh/dotfiles
+.zsh/git
 .zsh/history.log
+.zsh/update.log

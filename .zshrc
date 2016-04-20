@@ -1,3 +1,4 @@
+source ~/.zsh/setup.zsh
 source ~/.zsh/mode.zsh
 source ~/.zsh/options.zsh
 source ~/.zsh/alias.zsh
