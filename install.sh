@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Zsh
 if ! [ -d ~/.dotfiles ]; then
   git clone git@github.com:agsimeonov/dotfiles.git ~/.dotfiles
