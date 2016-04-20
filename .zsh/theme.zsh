@@ -19,4 +19,4 @@ POWERLEVEL9K_VI_COMMAND_MODE_STRING="\ue20c"
 # Context segment options
 export DEFAULT_USER="$USER"
 
-source  ~/git/powerlevel9k/powerlevel9k.zsh-theme
+source $ZSH_THEME_DIR/powerlevel9k.zsh-theme
