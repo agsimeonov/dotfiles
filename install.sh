@@ -18,3 +18,8 @@ fi
 if ! [ -e ~/.tmux.conf ]; then
   ln -s ~/.dotfiles/.tmux.conf ~/.
 fi
+
+# Vim
+if ! [ -e ~/.vimrc ]; then
+  ln -s ~/.dotfiles/.vimrc ~/.
+fi
