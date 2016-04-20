@@ -1,3 +1,4 @@
+ZSH_BIN_DIR=$(which zsh)
 ZSH_DOTFILES_DIR=$HOME/.dotfiles
 ZSH_SYNTAX_HIGHLIGHTING_DIR=$HOME/.zsh/git/syntax_highlighting
 ZSH_LS_COLORS_DIR=$HOME/.zsh/git/ls_colors
