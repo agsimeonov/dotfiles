@@ -1,25 +1,25 @@
 #!/bin/bash
 
 # Zsh
-if ! [ -d ~/.dotfiles ]; then
-  git clone git@github.com:agsimeonov/dotfiles.git ~/.dotfiles
+if ! [ -d $HOME/.dotfiles ]; then
+  git clone git@github.com:agsimeonov/dotfiles.git $HOME/.dotfiles
 fi
-if ! [ -e ~/.zshenv ]; then
-  ln -s ~/.dotfiles/.zshenv ~/.
+if ! [ -e $HOME/.zshenv ]; then
+  ln -s $HOME/.dotfiles/.zshenv $HOME/.
 fi
-if ! [ -e ~/.zshrc ]; then
-  ln -s ~/.dotfiles/.zshrc ~/.
+if ! [ -e $HOME/.zshrc ]; then
+  ln -s $HOME/.dotfiles/.zshrc $HOME/.
 fi
-if ! [ -e ~/.zsh ]; then
-  ln -s ~/.dotfiles/.zsh ~/.
+if ! [ -e $HOME/.zsh ]; then
+  ln -s $HOME/.dotfiles/.zsh $HOME/.
 fi
 
 # Tmux
-if ! [ -e ~/.tmux.conf ]; then
-  ln -s ~/.dotfiles/.tmux.conf ~/.
+if ! [ -e $HOME/.tmux.conf ]; then
+  ln -s $HOME/.dotfiles/.tmux.conf $HOME/.
 fi
 
 # Vim
-if ! [ -e ~/.vimrc ]; then
-  ln -s ~/.dotfiles/.vimrc ~/.
+if ! [ -e $HOME/.vimrc ]; then
+  ln -s $HOME/.dotfiles/.vimrc $HOME/.
 fi

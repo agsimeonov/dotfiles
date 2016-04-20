@@ -1,8 +1,8 @@
-ZSH_DOTFILES_DIR=~/.dotfiles
-ZSH_SYNTAX_HIGHLIGHTING_DIR=~/.zsh/git/syntax_highlighting
-ZSH_LS_COLORS_DIR=~/.zsh/git/ls_colors
-ZSH_THEME_DIR=~/.zsh/git/theme
-ZSH_UPDATE_FILE=~/.zsh/update.log
+ZSH_DOTFILES_DIR=$HOME/.dotfiles
+ZSH_SYNTAX_HIGHLIGHTING_DIR=$HOME/.zsh/git/syntax_highlighting
+ZSH_LS_COLORS_DIR=$HOME/.zsh/git/ls_colors
+ZSH_THEME_DIR=$HOME/.zsh/git/theme
+ZSH_UPDATE_FILE=$HOME/.zsh/update.log
 ZSH_LAST_UPDATE=0
 
 # Account for first run

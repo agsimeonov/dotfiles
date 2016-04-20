@@ -1,8 +1,8 @@
-source ~/.zsh/setup.zsh
-source ~/.zsh/mode.zsh
-source ~/.zsh/options.zsh
-source ~/.zsh/alias.zsh
-source ~/.zsh/history.zsh
-source ~/.zsh/theme.zsh
-source ~/.zsh/completion.zsh
-source ~/.zsh/color.zsh
+source $HOME/.zsh/setup.zsh
+source $HOME/.zsh/mode.zsh
+source $HOME/.zsh/options.zsh
+source $HOME/.zsh/alias.zsh
+source $HOME/.zsh/history.zsh
+source $HOME/.zsh/theme.zsh
+source $HOME/.zsh/completion.zsh
+source $HOME/.zsh/color.zsh
