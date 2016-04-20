@@ -22,3 +22,7 @@ alias stop_cassandra='launchctl unload /usr/local/opt/cassandra/*.plist'
 # Start/Stop UB VPN
 alias start_ubvpn='sudo openconnect -b --no-cert-check -u agsimeon ubvpn.buffalo.edu'
 alias stop_ubvpn='sudo pkill -SIGINT openconnect'
+
+# Zsh & SSH
+zinitssh() { ssh $1 "git clone git@github.com:agsimeonov/dotfiles.git ~/.dotfiles && ~/.dotfiles/install.sh" }
+zssh() { ssh -t $1 "eval $which zsh" }
