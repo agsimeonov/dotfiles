@@ -14,6 +14,9 @@ if [ -d $HOME/.linuxbrew ]; then
   export PATH="$HOME/.linuxbrew/bin:$PATH"
   export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
   export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+  if [ -d $HOME/.linuxbrew/sbin ]; then
+    export PATH=$HOME/.linuxbrew/sbin:$PATH
+  fi
 fi
 
 # Android Home
