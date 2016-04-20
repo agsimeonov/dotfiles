@@ -18,6 +18,9 @@ if [ $(date +%s) -ge $ZSH_UPDATE_THRESHOLD ]; then
   # Log new update time
   date +%s > $ZSH_UPDATE_FILE
 
+  # Install files if necessary
+  $ZSH_DOTFILES_DIR/install.sh
+
   if which git &> /dev/null; then
     # Dotfiles
     git -C $ZSH_DOTFILES_DIR pull
