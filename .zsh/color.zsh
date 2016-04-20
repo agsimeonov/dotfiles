@@ -6,7 +6,11 @@ elif ls --color &> /dev/null; then
 fi
 
 # Requires: https://github.com/trapd00r/LS_COLORS
-eval $( gdircolors -b $ZSH_LS_COLORS_DIR/LS_COLORS )
+if which gdircolors &> /dev/null; then
+  eval $( gdircolors -b $ZSH_LS_COLORS_DIR/LS_COLORS )
+else
+  eval $( dircolors -b $ZSH_LS_COLORS_DIR/LS_COLORS )
+fi
 
 # Colorful completion when navigating the filesystem
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
