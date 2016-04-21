@@ -26,3 +26,7 @@ alias stop_ubvpn='sudo pkill -SIGINT openconnect'
 # Zsh & SSH
 zinitssh() { ssh $1 "git clone git@github.com:agsimeonov/dotfiles.git \$HOME/.dotfiles && \$HOME/.dotfiles/install.sh" }
 zssh() { ssh -t $1 "eval $which zsh" }
+
+# Eclim
+alias start_eclim="$ECLIPSE_HOME/eclimd &> /dev/null&"
+alias stop_eclim="$ECLIPSE_HOME/eclim -command shutdown"
