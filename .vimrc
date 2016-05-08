@@ -11,9 +11,14 @@ set number          " always show line numbers
 set ruler           " ruler on bottom right displaying line, column
 set colorcolumn=100 " delimiter line
 set list            " show invisible characters
-set spell           " spell checking
+"set spell           " spell checking
 set nowrap          " don't wrap lines
 set showmatch       " show matching parenthesis
+
+" Paste
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 
 " Search
 set ignorecase      " ignore case when searching
