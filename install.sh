@@ -23,3 +23,8 @@ fi
 if ! [ -e $HOME/.vimrc ]; then
   ln -s $HOME/.dotfiles/.vimrc $HOME/.
 fi
+
+# Vrapper
+if ! [ -e $HOME/.vrapperrc ]; then
+  ln -s $HOME/.dotfiles/.vrapperrc $HOME/.
+fi

@@ -1,0 +1,13 @@
+" Editor settings
+set list       " show invisible characters
+set number     " always show line numbers
+set cursorline " show highlight on line with cursor
+
+" Mapping
+imap ;so System.out.println();<left><left>
+
+" Search
+set ignorecase " ignore case when searching
+set smartcase  " ignore case if search is all lowercase, case-sensitive otherwise
+set incsearch  " show match as search proceeds
+set hlsearch   " search highlighting
