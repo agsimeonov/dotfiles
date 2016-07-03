@@ -1,5 +1,5 @@
 export ZSH_BIN_DIR=$(which zsh)
-export ECLIPSE_HOME=$HOME/.eclim/Eclipse.app/Contents/Eclipse
+#export ECLIPSE_HOME=$HOME/.eclim/Eclipse.app/Contents/Eclipse
 
 ZSH_DOTFILES_DIR=$HOME/.dotfiles
 ZSH_SYNTAX_HIGHLIGHTING_DIR=$HOME/.zsh/git/syntax_highlighting

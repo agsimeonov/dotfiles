@@ -28,5 +28,5 @@ zinitssh() { ssh $1 "git clone git@github.com:agsimeonov/dotfiles.git \$HOME/.do
 zssh() { ssh -t $1 "eval $which zsh" }
 
 # Eclim
-alias start_eclim="$ECLIPSE_HOME/eclimd &> /dev/null&"
-alias stop_eclim="$ECLIPSE_HOME/eclim -command shutdown"
+#alias start_eclim="$ECLIPSE_HOME/eclimd &> /dev/null&"
+#alias stop_eclim="$ECLIPSE_HOME/eclim -command shutdown"
