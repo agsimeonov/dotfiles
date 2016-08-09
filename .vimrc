@@ -15,6 +15,9 @@ set list            " show invisible characters
 set nowrap          " don't wrap lines
 set showmatch       " show matching parenthesis
 
+" Share clipboard with macOS
+set clipboard=unnamed
+
 " Paste
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
