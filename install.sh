@@ -2,7 +2,7 @@
 
 # Zsh
 if ! [ -d $HOME/.dotfiles ]; then
-  git clone git@github.com:agsimeonov/dotfiles.git $HOME/.dotfiles
+  git clone https://github.com/agsimeonov/dotfiles.git $HOME/.dotfiles
 fi
 if ! [ -e $HOME/.zshenv ]; then
   ln -s $HOME/.dotfiles/.zshenv $HOME/.

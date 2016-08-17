@@ -30,19 +30,19 @@ if [ $(date +%s) -ge $ZSH_UPDATE_THRESHOLD ]; then
 
     # LS_COLORS
     if [ ! -d $ZSH_LS_COLORS_DIR ]; then
-      git clone git@github.com:trapd00r/LS_COLORS.git $ZSH_LS_COLORS_DIR 
+      git clone https://github.com/trapd00r/LS_COLORS.git $ZSH_LS_COLORS_DIR 
     fi
     git -C $ZSH_LS_COLORS_DIR pull
 
     # Zsh Syntax Highlighting
     if [ ! -d $ZSH_SYNTAX_HIGHLIGHTING_DIR ]; then
-      git clone git@github.com:zsh-users/zsh-syntax-highlighting.git $ZSH_SYNTAX_HIGHLIGHTING_DIR
+      git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_SYNTAX_HIGHLIGHTING_DIR
     fi
     git -C $ZSH_SYNTAX_HIGHLIGHTING_DIR pull
 
     # Theme
     if [ ! -d $ZSH_THEME_DIR ]; then
-      git clone git@github.com:bhilburn/powerlevel9k.git $ZSH_THEME_DIR
+      git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_THEME_DIR
     fi
     git -C $ZSH_THEME_DIR pull
   fi
