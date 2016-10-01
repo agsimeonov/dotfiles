@@ -33,3 +33,8 @@ fi
 if ! [ -e $HOME/.psqlrc ]; then
   ln -s $HOME/.dotfiles/.psqlrc $HOME/.
 fi
+
+# Counter-Strike Global Offensive
+if ! [ -e $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg ]; then
+  ln -s $HOME/.dotfiles/autoexec.cfg $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg
+fi
