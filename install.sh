@@ -28,3 +28,8 @@ fi
 if ! [ -e $HOME/.vrapperrc ]; then
   ln -s $HOME/.dotfiles/.vrapperrc $HOME/.
 fi
+
+# Postgres
+if ! [ -e $HOME/.psqlrc ]; then
+  ln -s $HOME/.dotfiles/.psqlrc $HOME/.
+fi
