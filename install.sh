@@ -35,6 +35,13 @@ if ! [ -e $HOME/.psqlrc ]; then
 fi
 
 # Counter-Strike Global Offensive
-if ! [ -e $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg ]; then
-  ln -s $HOME/.dotfiles/autoexec.cfg $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg
+if [ -d $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/ ]; then
+  if ! [ -e $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg ]; then
+    ln -s $HOME/.dotfiles/autoexec.cfg $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg
+  fi
+fi
+
+# Livestreamer
+if ! [ -e $HOME/.livestreamerrc ]; then
+  ln -s $HOME/.dotfiles/.livestreamerrc $HOME/.
 fi
