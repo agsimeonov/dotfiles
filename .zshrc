@@ -6,3 +6,4 @@ source $HOME/.zsh/history.zsh
 source $HOME/.zsh/theme.zsh
 source $HOME/.zsh/completion.zsh
 source $HOME/.zsh/color.zsh
+source $HOME/.zsh/misc.zsh
