@@ -34,6 +34,11 @@ if ! [ -e $HOME/.psqlrc ]; then
   ln -s $HOME/.dotfiles/.psqlrc $HOME/.
 fi
 
+# Interactive Shell
+if ! [ -e $HOME/.inputrc]; then
+  ln -s $HOME/.dotfiles/.inputrc $HOME/.
+fi
+
 # Counter-Strike Global Offensive
 if [ -d $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/ ]; then
   if ! [ -e $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/cfg/autoexec.cfg ]; then
