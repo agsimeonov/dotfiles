@@ -35,7 +35,7 @@ if ! [ -e $HOME/.psqlrc ]; then
 fi
 
 # Interactive Shell
-if ! [ -e $HOME/.inputrc]; then
+if ! [ -e $HOME/.inputrc ]; then
   ln -s $HOME/.dotfiles/.inputrc $HOME/.
 fi
 
