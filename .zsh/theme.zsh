@@ -2,7 +2,7 @@ POWERLEVEL9K_MODE='awesome-patched'
 
 # Prompt Elements
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time root_indicator context dir)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs vcs rbenv virtualenv aws_eb_env vi_mode)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs vcs rbenv nodeenv virtualenv aws_eb_env vi_mode)
 
 # Status segment options
 POWERLEVEL9K_STATUS_VERBOSE=true

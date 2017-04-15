@@ -1,3 +1,2 @@
-setopt correctall
 setopt autocd
 setopt interactivecomments
