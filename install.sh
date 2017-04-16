@@ -50,3 +50,8 @@ fi
 if ! [ -e $HOME/.livestreamerrc ]; then
   ln -s $HOME/.dotfiles/.livestreamerrc $HOME/.
 fi
+
+# Vim Plug
+if ! [ -e $HOME/.vim/autoload/plug.vim ]; then
+  curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi

@@ -4,6 +4,29 @@ set nocompatible
 " Enable file type plugins
 filetype plugin indent on
 
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+" Plugins
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'leafgarland/typescript-vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'airblade/vim-gitgutter'
+
+Plug 'scrooloose/nerdtree'
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>j :NERDTreeFind<CR>
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+Plug 'vim-airline/vim-airline'
+set laststatus=2
+let g:airline_powerline_fonts = 1
+
+" Initialize plugin system
+call plug#end()
+
 " Editor settings
 set hidden          " hides buffers instead of closing them
 syntax on           " syntax highlighting
