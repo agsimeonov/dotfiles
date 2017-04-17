@@ -12,6 +12,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'scrooloose/nerdtree'
 nmap <leader>n :NERDTreeToggle<CR>
