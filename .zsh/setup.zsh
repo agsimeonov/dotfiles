@@ -46,4 +46,7 @@ if [ $(date +%s) -ge $ZSH_UPDATE_THRESHOLD ]; then
     fi
     git -C $ZSH_THEME_DIR pull
   fi
+
+  # Install new files if necessary
+  $ZSH_DOTFILES_DIR/install.sh
 fi
