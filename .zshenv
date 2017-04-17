@@ -28,3 +28,13 @@ fi
 if [ -d $HOME/local/bin ]; then
   export PATH=$HOME/local/bin:$PATH
 fi
+
+# Go
+export GOROOT=/usr/local/opt/go/libexec
+if [ -d $GOROOT ]; then
+  export PATH=$PATH:$GOROOT/bin
+fi
+export GOPATH=$HOME/.go
+if [ -d $GOPATH ]; then
+  export PATH=$PATH:$GOPATH/bin
+fi
