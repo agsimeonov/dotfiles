@@ -22,7 +22,7 @@ if [ $(date +%s) -ge $ZSH_UPDATE_THRESHOLD ]; then
   date +%s > $ZSH_UPDATE_FILE
 
   # Install files if necessary
-  $ZSH_DOTFILES_DIR/install.sh
+  /bin/bash $ZSH_DOTFILES_DIR/install.sh
 
   if which git &> /dev/null; then
     # Dotfiles
@@ -48,5 +48,5 @@ if [ $(date +%s) -ge $ZSH_UPDATE_THRESHOLD ]; then
   fi
 
   # Install new files if necessary
-  $ZSH_DOTFILES_DIR/install.sh
+  /bin/bash $ZSH_DOTFILES_DIR/install.sh
 fi
