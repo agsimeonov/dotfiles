@@ -8,11 +8,13 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 
 " Plugins
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --gocode-completer' }
 Plug 'leafgarland/typescript-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --gocode-completer' }
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 Plug 'vim-syntastic/syntastic'
 let g:syntastic_go_checkers = ['go', 'gofmt', 'golint', 'gometalinter', 'govet']
