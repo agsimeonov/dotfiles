@@ -12,6 +12,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'mattn/emmet-vim'
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --gocode-completer' }
 let g:ycm_autoclose_preview_window_after_insertion = 1
