@@ -13,6 +13,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'mattn/emmet-vim'
+Plug 'ap/vim-css-color'
+
+Plug 'othree/csscomplete.vim'
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS noci
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --gocode-completer' }
 let g:ycm_autoclose_preview_window_after_insertion = 1
