@@ -9,6 +9,3 @@ zstyle ':completion:*' special-dirs true
 
 # Case insensitive tab completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-
-# Tab completion starts without an extra tab
-setopt MENU_COMPLETE
