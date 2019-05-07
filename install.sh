@@ -46,6 +46,11 @@ if [ -d $HOME/Library/Application\ Support/Steam/steamapps/common/Counter-Strike
   fi
 fi
 
+# Streamlink
+if ! [ -e $HOME/.streamlinkrc ]; then
+  ln -s $HOME/.dotfiles/.streamlinkrc $HOME/.
+fi
+
 # Livestreamer
 if ! [ -e $HOME/.livestreamerrc ]; then
   ln -s $HOME/.dotfiles/.livestreamerrc $HOME/.
