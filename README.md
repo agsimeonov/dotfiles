@@ -4,7 +4,7 @@
 ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 
 ## Install the following libraries
-```brew install zsh vim reattach-to-user-namespace git coreutils tmux```
+```brew install zsh vim git coreutils tmux```
 
 ## Clone this repository as follows
 ```git clone https://github.com/agsimeonov/dotfiles.git ~/.dotfiles```
@@ -39,3 +39,6 @@
 
 ## Restart iTerm2 and you are all set!
 Congratualations!
+
+## If you are getting: `zsh compinit: insecure directories, run compaudit for list.`
+```compaudit | xargs chmod g-w```
