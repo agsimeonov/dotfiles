@@ -25,8 +25,8 @@ if [ -d /usr/local/opt/android-sdk ]; then
 fi
 
 # User Binaries
-if [ -d $HOME/local/bin ]; then
-  export PATH=$HOME/local/bin:$PATH
+if [ -d $HOME/.local/bin ]; then
+  export PATH=$HOME/.local/bin:$PATH
 fi
 
 # Go
