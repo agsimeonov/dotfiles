@@ -4,7 +4,12 @@ if [ -x /usr/libexec/path_helper ]; then
   eval `/usr/libexec/path_helper -s`
 fi
 
-# Homebrew
+# Homebrew M1
+if [ -d /opt/homebrew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Homebrew Intel
 if [ -d /usr/local/sbin ]; then
   export PATH=/usr/local/sbin:$PATH
 fi
@@ -19,22 +24,7 @@ if [ -d $HOME/.linuxbrew ]; then
   fi
 fi
 
-# Android Home
-if [ -d /usr/local/opt/android-sdk ]; then
-  export ANDROID_HOME=/usr/local/opt/android-sdk
-fi
-
 # User Binaries
 if [ -d $HOME/.local/bin ]; then
   export PATH=$HOME/.local/bin:$PATH
-fi
-
-# Go
-export GOROOT=/usr/local/opt/go/libexec
-if [ -d $GOROOT ]; then
-  export PATH=$PATH:$GOROOT/bin
-fi
-export GOPATH=$HOME/.go
-if [ -d $GOPATH ]; then
-  export PATH=$PATH:$GOPATH/bin
 fi
