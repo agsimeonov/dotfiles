@@ -1,5 +1,4 @@
 export ZSH_BIN_DIR=$(which zsh)
-#export ECLIPSE_HOME=$HOME/.eclim/Eclipse.app/Contents/Eclipse
 
 ZSH_DOTFILES_DIR=$HOME/.dotfiles
 ZSH_SYNTAX_HIGHLIGHTING_DIR=$HOME/.zsh/git/syntax_highlighting
@@ -41,8 +40,9 @@ if [ $(date +%s) -ge $ZSH_UPDATE_THRESHOLD ]; then
     git -C $ZSH_SYNTAX_HIGHLIGHTING_DIR pull
 
     # Theme
-    if [ ! -d $ZSH_THEME_DIR ]; then
-      git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_THEME_DIR
+    if [ ! -f $ZSH_THEME_DIR/powerlevel10k.zsh-theme ]; then
+      rm -rf $ZSH_THEME_DIR
+      git clone https://github.com/romkatv/powerlevel10k.git $ZSH_THEME_DIR
     fi
     git -C $ZSH_THEME_DIR pull
   fi
