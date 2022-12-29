@@ -3,7 +3,7 @@ export ZSH_BIN_DIR=$(which zsh)
 ZSH_DOTFILES_DIR=$HOME/.dotfiles
 ZSH_SYNTAX_HIGHLIGHTING_DIR=$HOME/.zsh/git/syntax_highlighting
 ZSH_LS_COLORS_DIR=$HOME/.zsh/git/ls_colors
-ZSH_THEME_DIR=$HOME/.zsh/git/theme
+ZSH_THEME_DIR=$HOME/.zsh/git/powerlevel10k
 ZSH_UPDATE_FILE=$HOME/.zsh/update.log
 ZSH_LAST_UPDATE=0
 
@@ -40,8 +40,7 @@ if [ $(date +%s) -ge $ZSH_UPDATE_THRESHOLD ]; then
     git -C $ZSH_SYNTAX_HIGHLIGHTING_DIR pull
 
     # Theme
-    if [ ! -f $ZSH_THEME_DIR/powerlevel10k.zsh-theme ]; then
-      rm -rf $ZSH_THEME_DIR
+    if [ ! -d $ZSH_THEME_DIR ]; then
       git clone https://github.com/romkatv/powerlevel10k.git $ZSH_THEME_DIR
     fi
     git -C $ZSH_THEME_DIR pull
