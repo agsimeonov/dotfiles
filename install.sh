@@ -4,8 +4,8 @@
 if ! [ -d $HOME/.dotfiles ]; then
   git clone https://github.com/agsimeonov/dotfiles.git $HOME/.dotfiles
 fi
-if ! [ -e $HOME/.zshenv ]; then
-  ln -s $HOME/.dotfiles/.zshenv $HOME/.
+if ! [ -e $HOME/.zprofile ]; then
+  ln -s $HOME/.dotfiles/.zprofile $HOME/.
 fi
 if ! [ -e $HOME/.zshrc ]; then
   ln -s $HOME/.dotfiles/.zshrc $HOME/.
