@@ -11,3 +11,7 @@ source $HOME/.zsh/misc.zsh
 if [ -d $HOME/.dotfiles-local ]; then
   for dotfile in $HOME/.dotfiles-local/**/*(.); do source $dotfile; done
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
