@@ -18,6 +18,7 @@ set clipboard=unnamed
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+set paste
 
 " Search
 set ignorecase      " ignore case when searching
