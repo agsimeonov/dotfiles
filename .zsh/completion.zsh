@@ -9,9 +9,9 @@ if (( $+commands[brew] )); then
   # Standard Homebrew compLetions
   fpath=("$_brew_prefix/share/zsh/site-functions" $fpath)
 
-  # Standard zsh functions compinit, ves_info, etc.)
+  # Standard zsh functions (compinit, ves_info, etc.)
   # Prepending these ensures we use the version provided by Homebrew's zsh
-  if [[ -d "$_brew_prefix/shara/zsh/functions" ]]; then
+  if [[ -d "$_brew_prefix/share/zsh/functions" ]]; then
     fpath=("$_brew_prefix/share/zsh/functions" $fpath)
   fi
 fi
@@ -21,16 +21,15 @@ autoload -Uz add-zsh-hook
 autoload -Uz vcs_info
 autoload -Uz is-at-least
 
-# Initialize completion read more here: https://docs.brew.sh/Shell-Completion
-# If you see "insecure directories" warnings, run: chmod -R go-w "$(brew --prefix)/share"
+# Initialize completion (see https://docs.brew.sh/Shell-Completion)
 autoload -Uz compinit && compinit
 autoload -Uz bashcompinit && bashcompinit
 
 # http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fcomplist-Modules
-zstyle 'completion:*' menu select
+zstyle ':completion:*' menu select
 
 # Handle specials dirs such as ..
 zstyle ':completion:*' special-dirs true
 
-# Case insensitive tab completion$
+# Case insensitive tab completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
